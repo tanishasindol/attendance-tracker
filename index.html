@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>☁️ Attendance Tracker</h1>
+
+        <p>Manage your attendance easily</p>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- DASHBOARD -->
+
+        <section class="dashboard">
+
+            <div class="card">
+
+                <h3>Total Subjects</h3>
+
+                <p id="totalSubjects">0</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Classes Present</h3>
+
+                <p id="totalPresent">0</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Classes Absent</h3>
+
+                <p id="totalAbsent">0</p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ADD YOUR SUBJECT -->
+
+        <section class="attendance-box">
+
+            <h2>📚 Add Your Subject</h2>
+
+
+            <!-- YOUR NAME -->
+
+            <div class="form-group">
+
+                <label for="yourName">
+                    👤 Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="yourName"
+                    placeholder="Enter your name"
+                >
+
+            </div>
+
+
+
+            <!-- SUBJECT NAME -->
+
+            <div class="form-group">
+
+                <label for="subjectName">
+                    📚 Subject Name
+                </label>
+
+                <input
+                    type="text"
+                    id="subjectName"
+                    placeholder="Enter subject name"
+                >
+
+            </div>
+
+
+
+            <!-- DATE -->
+
+            <div class="form-group">
+
+                <label for="attendanceDate">
+                    📅 Date
+                </label>
+
+                <input
+                    type="date"
+                    id="attendanceDate"
+                >
+
+            </div>
+
+
+
+            <!-- ADD BUTTON -->
+
+            <button
+                class="add-button"
+                onclick="addSubject()"
+            >
+
+                + Add Subject
+
+            </button>
+
+
+
+            <!-- SUBJECTS -->
+
+            <div id="subjectList"></div>
+
+        </section>
+
+
+
+        <!-- QUOTE -->
+
+        <div class="quote-box">
+
+            <p>
+                ✨ Small steps make big progress ✨
+            </p>
+
+        </div>
+
+
+
+        <!-- ATTENDANCE HISTORY -->
+
+        <section class="history-box">
+
+            <h2>📅 Attendance Summary</h2>
+
+
+            <div class="history-card">
+
+                <p>
+                    <strong id="displayName">
+                        Your Attendance
+                    </strong>
+                </p>
+
+
+                <p>
+                    ✅ Present:
+                    <span id="historyPresent">0</span>
+                </p>
+
+
+                <p>
+                    ❌ Absent:
+                    <span id="historyAbsent">0</span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Stay Consistent ✦ You Can Do It ♡
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
